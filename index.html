@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejaswini Kummari - Personal portfolio</title>
+  <link rel="shortcut icon" href="./assets/tlogo.png" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Kummari Tejaswini</a>
+      </h1>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <video autoplay muted loop src="./assets/video.mp4" id="myVideo">
+  </video>
+
+
+
+  <main>
+    <article class="container">
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/Tejaswini_Image.jpg" alt="My Picture"
+            class="w-80">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Let's work Together!</h2>
+
+          <p class="section-text">
+            Hi! I’m Kummari Tejaswini, a Software Developer.<br>
+            <b>Professional Work Experience:</b></br> 
+            6 months SDE Intern at <i>Amazon</i> (2023) <br>
+            <b>Skilled in:</b> C, C++, Python, Java <br>
+            I am always excited to know more.
+            I spend my free time on multiple hobbies which include: <br>
+            <i>Blogging, Arts and Crafts, Reading Books etc.</i>
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary"  onclick="scrollToContact()">Hire me</button>
+            <button class="btn btn-primary" onclick="openResumePopup()">Look into my Resume</button>
+          </div>
+
+        </div>
+
+        <div id="resumeModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeResumePopup()">&times;</span>
+            <iframe src="https://drive.google.com/file/d/1Huhy-eUxzVfRPG7qTBuGMZwyFzCcZHez/preview" frameborder="0" width="100%" height="100%"></iframe>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">My Programming Skills!</h2>
+
+          <p class="section-text">
+            Tech Skills I worked hands on.., gained course certifications in..
+            and undergone trainings in.. .  
+          </p>
+
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C</div>
+
+                <div class="card-icon">
+                  <img src="./assets/c.jpeg" alt="C logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C++</div>
+
+                <div class="card-icon">
+                  <img src="./assets/cpp.png" alt="C++ logo">
+                </div>
+              </div>
+            </li>
+
+            <ul class="skills-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Python</div>
+  
+                  <div class="card-icon">
+                    <img src="./assets/python.png" alt="Python logo">
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Java</div>
+  
+                  <div class="card-icon">
+                    <img src="./assets/java.png" alt="Java logo">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">MySQL</div>
+  
+                  <div class="card-icon">
+                    <img src="./assets/mysql.png" alt="MySQL logo">
+                  </div>
+                </div>
+              </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/html.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/css.jpeg" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+      <section class="project" id="portfolio">
+        <div class="project-content section-content">
+          <p class="section-subtitle">My Projects</p>
+
+          <h2 class="h3 section-title">Projects I worked on!</h2>
+
+          <p class="section-text">
+            Projects I built.  
+          </p>
+          <div class="carousel">
+            <div class="card">
+              <img src="./assets/project1.jpeg" alt="Card Image">
+              <div class="card-content">
+                <h5>Algorithmic/Language Centric Project</h5>
+                <h6><i>Page Selection using Keyword Matching</i></h6>
+                <p></p>
+                <a href="https://gitlab.com/19wh1a12b7" class="btn-gitlab" target="_blank">View on <i class="fa fa-gitlab" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/project2.jpeg" alt="Card Image">
+              <div class="card-content">
+                <h5>Machine Learning Project</h5>
+                <h6><i>Selfie Filters - B612</i></h6>
+                <p></p>
+                <a href="https://gitlab.com/19wh1a12b7" class="btn-gitlab" target="_blank">View on <i class="fa fa-gitlab" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/project3.jpeg" alt="Card Image">
+              <div class="card-content">
+                <h5>Web Development Project</h5>
+                <h6><i>Pet Hotel</i></h6>
+                <p></p>
+                <a href="https://gitlab.com/19wh1a12b7" class="btn-gitlab" target="_blank">View on <i class="fa fa-gitlab" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Add more cards as needed -->
+          </div>
+
+        </div>
+        
+      </section>
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Want to Hire me? </br>Want to collaborate with me?! </h2>
+
+          <p class="section-text">
+            Let's get in Touch.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  Hyderabad, Telangana, India
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+                <a href="#" id="emailLink" class="contact-info" target="_top">tejaswinikummari01@gmail.com</a>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+          
+
+        </div>
+
+        <figure class="about-banner">
+          <img src="./assets/workdesk.jpg" alt="My Work Space"
+            class="w-80">
+        </figure>
+
+        
+      </section>
+
+      
+
+    </article>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+  
+
+
+
+  </main>
+
+
+
+
+
+</body>
+
+</html>
